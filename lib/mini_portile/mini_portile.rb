@@ -6,6 +6,18 @@ require 'fileutils'
 require 'tempfile'
 require 'digest/md5'
 
+if caller.grep(/extconf\.rb:/).first
+  warn <<-EOT
+NOTICE: You're loading MiniPortile #{MiniPortile::VERSION}. For MiniPortile 0.7.0+ you must use:
+
+    gem "mini_portile", "~>0.7.0"
+    require "mini_portile2"
+
+in your extconf.rb file.
+
+EOT
+end
+
 class MiniPortile
   attr_reader :name, :version, :original_host
   attr_writer :configure_options
