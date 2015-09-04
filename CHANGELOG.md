@@ -1,3 +1,7 @@
+### 0.6.3 / YYYY-MM-DD
+
+* Add a warning about the changed require name in MiniPortile 0.7.0+.
+
 ### 0.6.2 / 2014-12-30
 
 * Updated gemspec, license and README to reflect new maintainer.
