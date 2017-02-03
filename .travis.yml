@@ -13,4 +13,3 @@ matrix:
       - RUBYOPT="--enable-frozen-string-literal --debug=frozen-string-literal"
   - rvm: jruby-1.7
   - rvm: jruby-9.1.5.0
-  - rvm: rbx-3
